@@ -12,3 +12,8 @@ let [addr x, addr y ]= addresses;
 const contractInstance = await flashloancontract.new();
 const tokenName = ["loan 1];
 contractInstance.flashLoan(tokenName[0]);
+
+ const result = await contractInstance.flashLoan (tokenName[0], {from: lendingPool});
+ assert.equal(result.receipt.status, true);
+ assert.equal(result.logs[0].args.addr,tokenName[0]);
+
