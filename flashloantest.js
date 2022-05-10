@@ -9,3 +9,6 @@ let [addr x, addr y ]= addresses;
     })
 })
 
+const contractInstance = await flashloancontract.new();
+const tokenName = ["loan 1];
+contractInstance.flashLoan(tokenName[0]);
