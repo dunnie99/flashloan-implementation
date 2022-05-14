@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "token2",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "ownerOfToken1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "ownerOfToken2",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOfToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOfToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "swap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"exchange/Exchange.sol": "Exchange"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"exchange/Exchange.sol": {
+			"keccak256": "0xc61bd44104367c24cb14daa6bac30ea058d591ae6bc05cb040eabc4fcefe11fd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dd46bd1cd655dc3692ecb9f551a19189bfc7e76ad94a76b9a188e72cfd871f74",
+				"dweb:/ipfs/QmWtoEmcJZKmgqmwEzBFXmkTMRDDJzaDwvywmjMBxbjzpk"
+			]
+		},
+		"exchange/IERC20.sol": {
+			"keccak256": "0x8fcbc62af001bd93a4609b1f3fcd49678330af75110a8f47751b01982281736c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fb1c84baba8e2c67579375075c662b931ab121e204e1f6158c200b7bf51e6da8",
+				"dweb:/ipfs/QmS29wfEj21umR2nCAp7kRGGfi6zAvnNQE8pav7ADepHBg"
+			]
+		}
+	},
+	"version": 1
+}

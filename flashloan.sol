@@ -3,7 +3,7 @@ pragma solidity ^0.6.6;
 import "./FlashLoanReceiverBase.sol";
 import "./ILendingPoolAddressesProvider.sol";
 import "./ILendingPool.sol";
-import "../exchange/Exchange.sol";
+import "./exchange/Exchange.sol";
 
 contract FlashloanV1 is FlashLoanReceiverBaseV1, Exchange {
     address _reserve = address(this);
