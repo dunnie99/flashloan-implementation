@@ -57,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"exchange/Exchange.sol": "Exchange"
+			"flashloan-implementation/exchange/Exchange.sol": "Exchange"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -71,7 +71,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"exchange/Exchange.sol": {
+		"flashloan-implementation/exchange/Exchange.sol": {
 			"keccak256": "0xc61bd44104367c24cb14daa6bac30ea058d591ae6bc05cb040eabc4fcefe11fd",
 			"license": "MIT",
 			"urls": [
@@ -79,7 +79,7 @@
 				"dweb:/ipfs/QmWtoEmcJZKmgqmwEzBFXmkTMRDDJzaDwvywmjMBxbjzpk"
 			]
 		},
-		"exchange/IERC20.sol": {
+		"flashloan-implementation/exchange/IERC20.sol": {
 			"keccak256": "0x8fcbc62af001bd93a4609b1f3fcd49678330af75110a8f47751b01982281736c",
 			"license": "MIT",
 			"urls": [

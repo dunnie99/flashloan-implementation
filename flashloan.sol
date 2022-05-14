@@ -6,7 +6,7 @@ import "./ILendingPool.sol";
 import "./exchange/Exchange.sol";
 
 contract FlashloanV1 is FlashLoanReceiverBaseV1, Exchange {
-    address _reserve = address(this);
+    
     /**  
         _addressProvider = address of one of the Lending Pool Providers of Aave
 
@@ -31,7 +31,7 @@ contract FlashloanV1 is FlashLoanReceiverBaseV1, Exchange {
     }
 
     /**
-  This function is called after your contract has received the flash loaned amount
+  This function is called after contract has received the flash loaned amount
      */
     function executeOperation(
         address _reserve,
@@ -44,15 +44,14 @@ contract FlashloanV1 is FlashLoanReceiverBaseV1, Exchange {
     {
         require(_amount <= getBalanceInternal(address(this), _reserve), "Invalid balance, was the flashLoan successful?");
        //
-        // Your logic goes here.
+        // logic goes here.
         // !! Ensure that *this contract* has enough of `_reserve` funds to payback the `_fee` !!
         //
 
-        address token1 = 0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD;
-        address token2 = 0x13512979ADE267AB5100878E2e0f485B568328a4;
-        // address ownerOfToken1 = 0x2853eB1d81342453c6fA7FF7D03C97a8F142EabA;
-        address ownerOfToken1 = address(this);
-        address ownerOfToken2 = 0x3ceEE3CF67314501Ec960AC81E7e5A58b99Dbb7a;
+        address token1 = 0xA9C8CFDab3744CF384D1932536A84a25cd84D731; // asset address to swap eg aave DAI contract address
+        address token2 = 0xD17886D93D76714B1e5b73728FAEB158918FbaFd; // asset address to swap eg aave USDT contract address
+        address ownerOfToken1 = 0xB0274A52D7cF71Ac50D8cDC1c1479D777E29C564; // owner of Token1
+        address ownerOfToken2 = 0x22329EbC0D33A237B665c5e1B5c00bf58F311006; // owner of Token2
         uint amountOfToken1 = 1 ether;
         uint amountOfToken2 = 1 ether;
 
