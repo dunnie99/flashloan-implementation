@@ -1,0 +1,286 @@
+{
+	"id": "63031d8b71b8fd2235a1b63471b6f013",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.12",
+	"solcLongVersion": "0.6.12+commit.27d51765",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"flashloan-implementation/ILendingPoolAddressesProvider.sol": {
+				"content": "//SPDX-License-Identifier:MIT\npragma solidity ^0.6.6;\n\n/**\n    @title ILendingPoolAddressesProvider interface\n    @notice provides the interface to fetch the LendingPoolCore address\n */\n\ninterface ILendingPoolAddressesProviderV1 {\n    function getLendingPoolCore() external view returns (address payable);\n    function getLendingPool() external view returns (address);\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"flashloan-implementation/ILendingPoolAddressesProvider.sol": {
+				"ILendingPoolAddressesProviderV1": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "getLendingPool",
+							"outputs": [
+								{
+									"internalType": "address",
+									"name": "",
+									"type": "address"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"inputs": [],
+							"name": "getLendingPoolCore",
+							"outputs": [
+								{
+									"internalType": "address payable",
+									"name": "",
+									"type": "address"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"title": "ILendingPoolAddressesProvider interface",
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"getLendingPool()": "0261bf8b",
+							"getLendingPoolCore()": "ed6ff760"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLendingPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLendingPoolCore\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"ILendingPoolAddressesProvider interface\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"provides the interface to fetch the LendingPoolCore address\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"flashloan-implementation/ILendingPoolAddressesProvider.sol\":\"ILendingPoolAddressesProviderV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"flashloan-implementation/ILendingPoolAddressesProvider.sol\":{\"keccak256\":\"0x1608c0d2363569348e27920624a3e1931293bd5e317e6bfa9b5d27e79f82b2fc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2f7fc925ef78b2fdea7480e6b1e5ed8093cd8004ab95b1ca0e2ad6f2bc22a172\",\"dweb:/ipfs/QmS9qLZqg4LUfCLPa1ZjFbvaANjdwegqWQiqujyKdM1hdL\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"notice": "provides the interface to fetch the LendingPoolCore address",
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"flashloan-implementation/ILendingPoolAddressesProvider.sol": {
+				"ast": {
+					"absolutePath": "flashloan-implementation/ILendingPoolAddressesProvider.sol",
+					"exportedSymbols": {
+						"ILendingPoolAddressesProviderV1": [
+							13
+						]
+					},
+					"id": 14,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".6"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "30:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "55:130:0",
+								"text": "@title ILendingPoolAddressesProvider interface\n@notice provides the interface to fetch the LendingPoolCore address"
+							},
+							"fullyImplemented": false,
+							"id": 13,
+							"linearizedBaseContracts": [
+								13
+							],
+							"name": "ILendingPoolAddressesProviderV1",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": null,
+									"documentation": null,
+									"functionSelector": "ed6ff760",
+									"id": 7,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getLendingPoolCore",
+									"nodeType": "FunctionDefinition",
+									"overrides": null,
+									"parameters": {
+										"id": 3,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "262:2:0"
+									},
+									"returnParameters": {
+										"id": 6,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 5,
+												"mutability": "mutable",
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 7,
+												"src": "288:15:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address_payable",
+													"typeString": "address payable"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "288:15:0",
+													"stateMutability": "payable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address_payable",
+														"typeString": "address payable"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "287:17:0"
+									},
+									"scope": 13,
+									"src": "235:70:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"functionSelector": "0261bf8b",
+									"id": 12,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getLendingPool",
+									"nodeType": "FunctionDefinition",
+									"overrides": null,
+									"parameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "333:2:0"
+									},
+									"returnParameters": {
+										"id": 11,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 10,
+												"mutability": "mutable",
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 12,
+												"src": "359:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 9,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "359:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "358:9:0"
+									},
+									"scope": 13,
+									"src": "310:58:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 14,
+							"src": "187:183:0"
+						}
+					],
+					"src": "30:340:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

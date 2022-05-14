@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getLendingPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLendingPoolCore",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "ILendingPoolAddressesProvider interface",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "provides the interface to fetch the LendingPoolCore address",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"flashloan-implementation/ILendingPoolAddressesProvider.sol": "ILendingPoolAddressesProviderV1"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"flashloan-implementation/ILendingPoolAddressesProvider.sol": {
+			"keccak256": "0x1608c0d2363569348e27920624a3e1931293bd5e317e6bfa9b5d27e79f82b2fc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2f7fc925ef78b2fdea7480e6b1e5ed8093cd8004ab95b1ca0e2ad6f2bc22a172",
+				"dweb:/ipfs/QmS9qLZqg4LUfCLPa1ZjFbvaANjdwegqWQiqujyKdM1hdL"
+			]
+		}
+	},
+	"version": 1
+}

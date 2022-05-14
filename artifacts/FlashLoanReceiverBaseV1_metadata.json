@@ -102,19 +102,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_asset",
-						"type": "address"
-					}
-				],
-				"name": "flashloan",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -130,44 +117,6 @@
 			{
 				"inputs": [],
 				"name": "renounceOwnership",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "token1",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "token2",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "ownerOfToken1",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "ownerOfToken2",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountOfToken1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountOfToken2",
-						"type": "uint256"
-					}
-				],
-				"name": "swap",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -226,21 +175,13 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"constructor": "_addressProvider = address of one of the Lending Pool Providers of Aave using DAI LendingPool address 0x506B0B2CF20FAA8f38a4E2B524EE43e1f4458Cc5  A list of all deployed contract addresses can be found athttps://docs.aave.com/developers/v/1.0/deployed-contracts/deployed-contract-instances",
-				"executeOperation(address,uint256,uint256,bytes)": {
-					"notice": "This function is called after your contract has received the flash loaned amount"
-				},
-				"flashloan(address)": {
-					"notice": "_asset = address of the asset we want to flash loan Flash loan 1000000000000000000 wei (1 ether) worth of `_asset`"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"flashloan-implementation/FlashLoan.sol": "FlashloanV1"
+			"flashloan-implementation/FlashLoanReceiverBase.sol": "FlashLoanReceiverBaseV1"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -254,30 +195,6 @@
 		"remappings": []
 	},
 	"sources": {
-		"exchange/Exchange.sol": {
-			"keccak256": "0xc61bd44104367c24cb14daa6bac30ea058d591ae6bc05cb040eabc4fcefe11fd",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://dd46bd1cd655dc3692ecb9f551a19189bfc7e76ad94a76b9a188e72cfd871f74",
-				"dweb:/ipfs/QmWtoEmcJZKmgqmwEzBFXmkTMRDDJzaDwvywmjMBxbjzpk"
-			]
-		},
-		"exchange/IERC20.sol": {
-			"keccak256": "0x8fcbc62af001bd93a4609b1f3fcd49678330af75110a8f47751b01982281736c",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://fb1c84baba8e2c67579375075c662b931ab121e204e1f6158c200b7bf51e6da8",
-				"dweb:/ipfs/QmS29wfEj21umR2nCAp7kRGGfi6zAvnNQE8pav7ADepHBg"
-			]
-		},
-		"flashloan-implementation/FlashLoan.sol": {
-			"keccak256": "0x7a158a890f0a088ccc19a317ae9dcc5283f3d14e3bc55a7aa72c9798d6911700",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://7ff8ff900a78874c9f242676db197b5f15ba1979e6b2c40075cd3381b1c68aff",
-				"dweb:/ipfs/QmUSusW378C8ZMGJQJwT5gW1YZFST83eVg2Gs7No7ukSNq"
-			]
-		},
 		"flashloan-implementation/FlashLoanReceiverBase.sol": {
 			"keccak256": "0xe9a6111a392657361e8a977feb1e0e6194039dd607286d7587007d96dd8216c6",
 			"license": "MIT",
@@ -292,14 +209,6 @@
 			"urls": [
 				"bzz-raw://79ea082aafc67ff37260f2a06070cfb1d300a164608508bff1402c56fee6fd61",
 				"dweb:/ipfs/QmZACARtc91sydKzr1npeprkjQyVAwHxzZ4v7dPswzrALA"
-			]
-		},
-		"flashloan-implementation/ILendingPool.sol": {
-			"keccak256": "0x43888d9015041ab10a7e06f13e6cdc04637b624dd6905d58cb205e7087a6c9d5",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://465e11c527c1ea40212504f8cde1a1122e7c87509b39cdb1037a096f773ff1a0",
-				"dweb:/ipfs/QmY4GpdiWtq4qJfQPPbmiwwunPDvaZR55dAKTQyJuW9EFK"
 			]
 		},
 		"flashloan-implementation/ILendingPoolAddressesProvider.sol": {
