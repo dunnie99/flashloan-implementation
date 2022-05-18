@@ -18,7 +18,7 @@ Most use cases of flash loans include;
     * The transaction does not result in a profit.
 # Setting up code
 There are six contracts for this project
-* MyFlashloanContract.sol
+* Flashloan.sol
 * FlashLoanReceiverBase.sol
 * ILendingPoolAddressesProvider.sol
 * IFlashLoanReceiver.sol
