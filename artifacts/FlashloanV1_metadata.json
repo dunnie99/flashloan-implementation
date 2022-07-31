@@ -240,7 +240,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"flashloan-implementation/FlashLoan.sol": "FlashloanV1"
+			"flashloan.sol": "FlashloanV1"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -254,15 +254,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"flashloan-implementation/FlashLoan.sol": {
-			"keccak256": "0x64228812adb917ea5dce6b445dcd700d658f61c666819a2f6a1768435a1d2b71",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://eaf67460eea3718a84247093247c3f6a929555b48df2b80fd82ca25c509f4ea5",
-				"dweb:/ipfs/QmbMMaAa5qvMmzNGAzmBF37q2nsvNzWBPQVfEyARZPs3Yz"
-			]
-		},
-		"flashloan-implementation/FlashLoanReceiverBase.sol": {
+		"FlashLoanReceiverBase.sol": {
 			"keccak256": "0xe9a6111a392657361e8a977feb1e0e6194039dd607286d7587007d96dd8216c6",
 			"license": "MIT",
 			"urls": [
@@ -270,7 +262,7 @@
 				"dweb:/ipfs/QmU7Ru4B79C3cJmwiXiF4GZJWG4PASRg6ANiTmMMTYwp2Y"
 			]
 		},
-		"flashloan-implementation/IFlashLoanReceiver.sol": {
+		"IFlashLoanReceiver.sol": {
 			"keccak256": "0x9857226b61eeb84b5e1bb5c4623c3317ef0eaae623bad0bccb9f578813275118",
 			"license": "MIT",
 			"urls": [
@@ -278,7 +270,7 @@
 				"dweb:/ipfs/QmZACARtc91sydKzr1npeprkjQyVAwHxzZ4v7dPswzrALA"
 			]
 		},
-		"flashloan-implementation/ILendingPool.sol": {
+		"ILendingPool.sol": {
 			"keccak256": "0x43888d9015041ab10a7e06f13e6cdc04637b624dd6905d58cb205e7087a6c9d5",
 			"license": "MIT",
 			"urls": [
@@ -286,7 +278,7 @@
 				"dweb:/ipfs/QmY4GpdiWtq4qJfQPPbmiwwunPDvaZR55dAKTQyJuW9EFK"
 			]
 		},
-		"flashloan-implementation/ILendingPoolAddressesProvider.sol": {
+		"ILendingPoolAddressesProvider.sol": {
 			"keccak256": "0x1608c0d2363569348e27920624a3e1931293bd5e317e6bfa9b5d27e79f82b2fc",
 			"license": "MIT",
 			"urls": [
@@ -294,7 +286,7 @@
 				"dweb:/ipfs/QmS9qLZqg4LUfCLPa1ZjFbvaANjdwegqWQiqujyKdM1hdL"
 			]
 		},
-		"flashloan-implementation/Withdrawable.sol": {
+		"Withdrawable.sol": {
 			"keccak256": "0xbac3564b052027faf37a3caef94c55f89a6898c072b2b1250f083ab717de629a",
 			"license": "MIT",
 			"urls": [
@@ -302,7 +294,7 @@
 				"dweb:/ipfs/QmTHrqgeUo58hSZ9hq7KSJ8FwCvemP8dpPeQnbrf77m8M2"
 			]
 		},
-		"flashloan-implementation/exchange/Exchange.sol": {
+		"exchange/Exchange.sol": {
 			"keccak256": "0xc61bd44104367c24cb14daa6bac30ea058d591ae6bc05cb040eabc4fcefe11fd",
 			"license": "MIT",
 			"urls": [
@@ -310,12 +302,20 @@
 				"dweb:/ipfs/QmWtoEmcJZKmgqmwEzBFXmkTMRDDJzaDwvywmjMBxbjzpk"
 			]
 		},
-		"flashloan-implementation/exchange/IERC20.sol": {
+		"exchange/IERC20.sol": {
 			"keccak256": "0x8fcbc62af001bd93a4609b1f3fcd49678330af75110a8f47751b01982281736c",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://fb1c84baba8e2c67579375075c662b931ab121e204e1f6158c200b7bf51e6da8",
 				"dweb:/ipfs/QmS29wfEj21umR2nCAp7kRGGfi6zAvnNQE8pav7ADepHBg"
+			]
+		},
+		"flashloan.sol": {
+			"keccak256": "0x9c8232f89812b185fdee7fcd7b0745e83e06b045c40958b5ce81a3e21df66e02",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7db75f0a7b301552120498fe1c116564af4ce8ad269282c7f17a4e0e885057d9",
+				"dweb:/ipfs/Qmegct5ikDPaFTrwzmTtnXbdjhS7LFdBJG3wgnwJCe8U61"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/docs-v3.x/contracts/access/Ownable.sol": {

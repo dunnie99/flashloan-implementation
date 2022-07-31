@@ -252,7 +252,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"flashloan-implementation/exchange/Token2.sol": "Token2"
+			"exchange/Token2.sol": "Token2"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -266,7 +266,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"flashloan-implementation/exchange/IERC20.sol": {
+		"exchange/IERC20.sol": {
 			"keccak256": "0x8fcbc62af001bd93a4609b1f3fcd49678330af75110a8f47751b01982281736c",
 			"license": "MIT",
 			"urls": [
@@ -274,7 +274,7 @@
 				"dweb:/ipfs/QmS29wfEj21umR2nCAp7kRGGfi6zAvnNQE8pav7ADepHBg"
 			]
 		},
-		"flashloan-implementation/exchange/Token2.sol": {
+		"exchange/Token2.sol": {
 			"keccak256": "0xc2c48c423a2a9595a413f45c7ef9015b7ce872d78bf9cfcfd04fdcce9bedd31d",
 			"license": "MIT",
 			"urls": [
